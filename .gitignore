@@ -1,0 +1,35 @@
+# --- Віртуальне середовище ( virtualenv / venv ) ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Кеш Python та службові файли ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Звіти Ruff ---
+ruff-report.txt
+ruff_report.txt
+
+# --- Файли баз даних та результати роботи програми ---
+labs/lab01/data/users.csv
+labs/lab01/data/log.json
+*.db
+*.sqlite3
+
+# Папку data зберігаємо у репозиторії порожньою
+!labs/lab01/data/.gitkeep
+
+# --- Системні файли ---
+.DS_Store
+Thumbs.db
+
+# --- Налаштування IDE ---
+.idea/
+.vscode/
